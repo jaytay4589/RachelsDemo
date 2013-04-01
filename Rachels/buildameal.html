@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <title>Build-A-Meal</title>
+  <meta charset="utf-8">
+  <script src=""></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/rachels.css">
+  <link rel="stylesheet" href="css/buildameal.css">
+  </head>
+  
+  <body id="body">
+    <div class="center">
+    <img src="img/header.jpg">
+    <div class="navbar">
+      <div class="navbar-inner" >
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="specials.html">Daily Specials</a></li>
+        <li class="active"><a href="buildameal.html">Build-A-Meal</a></li>
+        <li><a href="directions.html">Get Directions</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+       
+      </ul>
+  </div>
+</div>
+</div>
+<div id="meal">
+<h1>Build-A-Meal</h1>
+<p id="instructions">To select meal options, drag them into the cart.  To delete meal options, drag them out of the cart. <br> Hover for more details.</p>
+<section id="options">
+	<div> 
+    <ul class="option">
+    <li class="title">Entrees</li>
+    <li draggable="true" class="food" ondragstart="dragFood(event)">Hamburger<br>$<span class="price">1.99</span><div class="invis">Plain and delicious</div></li>
+		<li draggable="true" class="food" ondragstart="dragFood(event)">Cheeseburger<br>$<span class="price">2.99</span><div class="invis">choice of American, cheddar or Swiss</div></li> 
+		<li draggable="true" class="food" ondragstart="dragFood(event)">Hot Dog<br>$<span class="price">1.25</span><div class="invis">With ketchup, relish, mustard, and/or onions</div></li>
+    </ul>
+	</div>
+	
+	<div> 
+    <ul class="option">
+    <li class="title">Sides</li>
+    <li draggable="true" class="food" ondragstart="dragFood(event)">French Fries<br>$<span class="price">1.00</span><div class="invis">Hand Cut!</div></li> 
+		<li draggable="true" class="food" ondragstart="dragFood(event)">Sweet Potato Fries<br>$<span class="price">1.50</span><div class="invis">With cinnamon Sugar</div></li> 
+		<li draggable="true" class="food" ondragstart="dragFood(event)">Onion Rings<br>$<span class="price">1.50</span><div class="invis">Beer battered</div></li>
+    </ul>
+	</div>
+	
+	<div>
+    <ul class="option">
+    <li class="title">Desserts</li>
+    <li draggable="true" class="food" ondragstart="dragFood(event)">Peanut Butter Pie<br>$<span class="price">2.25</span><div class="invis">Fresh, fluffy, Peanut butter-y</div></li> 
+		<li draggable="true" class="food" ondragstart="dragFood(event)">Ho-Ho Cake<br>$<span class="price">2.00</span><div class="invis">Like the snack cake, only bigger!</div></li> 
+		<li draggable="true" class="food" ondragstart="dragFood(event)">Cheesecake<br>$<span class="price">2.50</span><div class="invis">New York style</div></li>
+    </ul>
+	</div>
+  <div ondrop="drop(event)" ondragenter="return false" ondragover="return false">
+    <ul class="option" id="cart">
+    <li>Shopping Cart</li>
+  </ul>
+  <p>Total: <span id="bold">$<span id="total">0.00</span></span></p>
+  </div>
+
+	<div class="clear"></div>
+</section>
+<div class="clear"></div>
+</div>   
+
+ 
+ 
+  
+  <div class="center">
+    <footer>
+      <p>&copy; 2013 Springfield Restaurant Group </p>
+    </footer>
+  </div>  
+
+  
+       
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/rachels.js"></script>
+  </body>
+</html>
