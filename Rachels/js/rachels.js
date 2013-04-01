@@ -56,7 +56,7 @@ function drop(event) {
   cartArray.push(key);
   localStorage.setItem("cartArray", JSON.stringify(cartArray));
   addCartToDOM(key, value);
- } 
+} 
    
    function updateCart() { 
     var totalPrice = document.getElementById("total"); 
@@ -82,9 +82,9 @@ function drop(event) {
   localStorage.setItem("cartArray", JSON.stringify(cartArray));
   removeCartFromDOM(key);
  }
- }      
+}      
     
-  function removeCartFromDOM(key) {
+function removeCartFromDOM(key) {
   var cartDel = document.getElementById(key);
   cartDel.parentNode.removeChild(cartDel);
   updateCart();
