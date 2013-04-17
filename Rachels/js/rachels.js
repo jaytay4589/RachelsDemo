@@ -40,7 +40,7 @@ function getCartArray() {
 }
 
 function dragFood(event) {
-  food = event.target 
+  food = event.target; 
   dragSrcEl = food;
   event.dataTransfer.setData('food', food.id);
   event.dataTransfer.setData('text/html', this.innerHTML);

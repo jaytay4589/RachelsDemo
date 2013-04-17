@@ -4,10 +4,10 @@ body {
 }
     
     
-#specials, #contact, #meal {
+#specials, #contact, #meal, .failmsg {
   background-color: #f3f3f3;     
 }
-#specials, #meal {
+#specials, #meal, .failmsg {
  margin-top: -10px;
 }
     
@@ -96,7 +96,7 @@ margin-bottom: 0px;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
     
-#contact, #meal {
+#contact, #meal, .failmsg {
   min-height: 412px;
   max-height: 412px;
 }
@@ -113,4 +113,8 @@ margin-bottom: 0px;
 
 .lead {
 white-space: normal;
+}
+
+.failmsg {
+width: 100%;
 }
